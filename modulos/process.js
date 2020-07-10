@@ -9,7 +9,7 @@ process.on('beforeExit', () => {
 //detectamos cuando el queramos salir del programa
 process.on('exit', () => {
     //en el exit solo se pueden colocar funciones sincronas ya que este solo existe en el hilo principal
-    //si colocamos una funcion asincrona no se va a procesar y que no se envia al otro hilo
+    //si colocamos una funcion asincrona no se va a procesar ya que no se envia al otro hilo
     console.log('Ale, el proceso acabo')
 })
 
